@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/description/
 
+//O(N) - s1 e s1 têm o mesmo tamanho
+
 public class Solution {
     public bool AreAlmostEqual(string s1, string s2) {
         char diffArray1 = '0';
