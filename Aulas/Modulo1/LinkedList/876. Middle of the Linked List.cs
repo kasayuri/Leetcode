@@ -5,6 +5,10 @@ Given the head of a singly linked list, return the middle node of the linked lis
 If there are two middle nodes, return the second middle node.
 */
 
+/*
+Estratégia: contar quantos elementos existem na lista. 
+Iterar a lista até a metade e retornar o nó do meio
+*/
 ListNode MiddleNode(ListNode head) {
   var count = 0;
   var it = head;
@@ -25,6 +29,11 @@ ListNode MiddleNode(ListNode head) {
 }
 
 
+/*
+Estratégia 2: a lebre e a tartaruga.
+Criar um ponteiro para lista que anda de nó em nó (tartaruga) e outro que anda dois nós por vez (lebre). 
+Quando o ponteiro lebre chegar no final da lista, o ponteiro tartaruga estará no meio.
+*/
 ListNode MiddleNode(ListNode head) {
   var rabbit = head;
   var turtle = head;
